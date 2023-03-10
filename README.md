@@ -11,12 +11,12 @@ The library is released to the public under the terms of the Mozilla Public Lice
 
 Add the unit to your project.
 e.g.
-...
+```
 try
   raise Exception.Create('New exception');
 except
   on E:Exception do
     ShowMessage('Exception ' + E.Message + #13#10' Stacktrace: '#13#10 + E.StackTrace);
 end;
-...
+```
 Compile with debug symbols and you get a nice stacktrace where the exception happend.
